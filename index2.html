@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>ejercicio3</title>
+</head>
+<style type="text/css">
+
+  .fondo {
+    background-color: #8ed6f7;
+    height: 500px;
+  }
+
+  .arena {
+    background-color: #f9f6e9;
+    height: 150px;
+  }
+
+  h1 {
+    position: absolute;
+    font-family: arial;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    top: 25%;
+  }
+
+  p {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    top: 30%;%;
+  }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .tipo {
+    margin-left: 100px;
+  }
+
+  .arena {
+    position: relative;
+  }
+
+
+  .palm img {
+    position: absolute;
+    left: 50%;
+    top: -60%;
+    animation-duration: 20s;
+    animation-name: palm;
+  }
+
+  @keyframes palm {
+    from {
+    opacity:0;
+    }
+    to {
+    opacity:1
+    }
+    }
+
+
+
+
+  .people img {
+    position: absolute;
+    left: 60%;
+  }
+
+  .beach img {
+    position: absolute;
+    right: 10%;
+    animation: beach 3s;
+  }
+
+  @keyframes beach {
+    from {
+      right: 0px;
+    }
+    to {
+      left: 800px;
+    }
+  }
+
+  .sol {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  .umbrella img {
+    position: absolute;
+    left: 5%;
+    animation: umbrella 3s;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes umbrella {
+    from {
+      left: 0px;
+    }
+
+    to {
+      right: 1300px;
+    }
+  }
+
+  .sol {
+    top: 5%;
+    position: absolute;
+    animation-name: sol;
+    align-self: flex-end;
+    opacity: 1;
+    animation-duration: 5s;
+    }
+
+  @keyframes sol {
+    from {
+    opacity:0;
+    }
+    to {
+    opacity:1
+    }
+}
+
+  p {
+  position: absolute;
+  animation-name: p;
+  align-self: flex-end;
+  opacity: 1;
+  animation-duration: 5s;
+  }
+
+@keyframes p {
+  from {
+  opacity:0;
+  }
+  to {
+  opacity:1
+  }
+}
+
+
+</style>
+
+
+<body>
+
+  <div class="fondo">
+    <div class="tipo">
+      <img class="sol" src="ejercicio-3_sun.svg" alt="">
+      <h1>Vive el verano</h1>
+      <p>Con la protección del bloqueador Solar número uno de Chile.
+        podrás tener un verano protegido junto a toda tu familia</p>
+    </div>
+
+  </div>
+  <div class="arena">
+    <div class="umbrella">
+      <img src="ejercicio-3_sun-umbrella.svg" height="130px" alt="">
+    </div>
+    <div class="palm">
+      <img src="ejercicio-3_palm-tree.svg" height="150px" alt="">
+    </div>
+    <div class="people">
+      <img src="ejercicio-3_people.svg" height="150px" alt="">
+    </div>
+    <div class="beach">
+      <img src="ejercicio-3_beach-ball.svg" height="130px" alt="">
+    </div>
+  </div>
+
+</body>
+
+</html>
